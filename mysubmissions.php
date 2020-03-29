@@ -1,7 +1,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="stylesheet" href="CSS/problemstyle.css" />
+  <link rel="stylesheet" href="CSS/tablestyle.css" />
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
     rel="stylesheet"
@@ -97,7 +97,30 @@
   </nav>
 
   <main>
-
+    <div id="container">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Problem</th>
+            <th>Language</th>
+            <th>time</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          include_once 'includes\dbConnector.php';
+          $sql="SELECT * FROM submissions";
+          $count=1;
+          $result=mysqli_query($conn,$sql);
+          while($row=mysqli_fetch_assoc($result)){
+            echo "<tr><td>$count</td><td>".$row['prob_name']."</td><td>".$row['Language']."</td><td>".$row['time']."</td><td>".$row['result']."</td></tr>";
+            $count=$count+1;
+          }
+          ?>
+        </tbody>
+      </table>
 
     </div>
   </main>
