@@ -1,0 +1,29 @@
+<?php
+  session_start();
+  include_once '..\includes\dbConnector.php';
+  $email=$_POST['email'];
+  $pwd=$_POST['pwd'];
+  $sql="SELECT pwd,UID,Username,User_type FROM profile where Email='$email'";
+  $result=mysqli_query($conn,$sql);
+  if($result->num_rows==0){
+    header("Location:http://localhost/judgesystem/index.php?feedback=null");
+  }
+  else{
+    $row=mysqli_fetch_assoc($result);
+    if($pwd==$row['pwd']){
+      $_SESSION['UID']=$row['UID'];
+      $_SESSION['Username']=$row['Username'];
+      $_SESSION['User_type']=$row['User_type'];
+      if($row['User_type']=='norm'){
+        header("Location:http://localhost/judgesystem/dashboard.php");
+      }
+      else{
+        header("Location:http://localhost/judgesystem/prob_upload.php");
+      }
+    }
+    else{
+      header("Location:http://localhost/judgesystem/index.php?feedback=invalid");
+      session_destroy();
+    }
+  }
+?>
