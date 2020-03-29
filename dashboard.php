@@ -1,7 +1,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/style.css" />
-  <link rel="stylesheet" href="CSS/problemstyle.css" />
+  <link rel="stylesheet" href="CSS/tablestyle.css" />
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
     rel="stylesheet"
@@ -97,8 +97,30 @@
   </nav>
 
   <main>
-
-
+    <div="container">
+    <table class="content-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Difficulty</th>
+          <th>Acceptance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        include_once 'dbConnector.php';
+        $sql="SELECT prob_id,prob_name,score FROM problems";
+        $count=1;
+        $result=mysqli_query($conn,$sql);
+        while($row=mysqli_fetch_assoc($result)){
+          echo "<tr><td>$count</td><td><a href='editor.html'>".$row['prob_name']."</a></td><td>".$row['score']."</td><td></td><td></td></tr>";
+          $count=$count+1;
+        }
+        ?>
+      </tbody>
+    </table>
     </div>
   </main>
 </body>
