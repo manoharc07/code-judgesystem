@@ -85,7 +85,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="https://github.com/manoharc07/judgesystem" class="nav-link">
 
           <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
             <path fill="currentColor" class="fa-secondary"
