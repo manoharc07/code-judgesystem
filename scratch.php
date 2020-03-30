@@ -100,9 +100,17 @@
         <div class="right-pane">
           <div class="editor-container">
             <div class="top-editor-tab">
-              <div class="tab1"></div>
-              <div class="tab2"></div>
-              <div class="tab3"></div>
+              <div class="tab1"><button type="buttpn" id="reset">Reset</button></div>
+              <div class="tab2"><button type="button" id="theme">Theme</button></div>
+              <div class="tab3"><button type="button" id="Language">
+                <lablel>Language</label>
+                <select class="drop-down" id="lang">
+                  <option>C++</option>
+                  <option>C</option>
+                  <option>Java</option>
+                  <option>Python</option>
+                </select>
+              </div>
             </div>
             <div class="editor">
               <pre id="editor">function foo(items) {
@@ -120,7 +128,7 @@
               </script>
             </div>
             <div class="bottom-editor-tab">
-              <div class="submit"></div>
+              <div class="submit"><button type="button" id="submit-btn">Run & Submit</div>
             </div>
           </div>
           <div class="response"></div>
