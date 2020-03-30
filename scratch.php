@@ -3,14 +3,8 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/tablestyle.css" />
   <link rel="stylesheet" href="CSS/editor.css"/>
-  <linkhref="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
-  <link href="codemirror/lib/codemirror.css" rel="stylesheet">
-  <script src="codemirror/lib/codemirror.js"></script>
-  <link href="codemirror/addon/display/fullscreen.css" rel="stylesheet">
-  <script src="codemirror/mode/clike/clike.js"></script>
-  <link href="codemirror/theme/base16-dark.css" rel="stylesheet">
-  <script src="codemirror/addon/edit/closebrackets.js"></script>
-  <script src="codemirror/addon/edit/matchbrackets.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+
 </head>
 
 <body>
@@ -100,6 +94,37 @@
       </li>
     </ul>
   </nav>
-  <main>
-  </main>
+    <main>
+      <div class="main-container">
+        <div class="left-pane"></div>
+        <div class="right-pane">
+          <div class="editor-container">
+            <div class="top-editor-tab">
+              <div class="tab1"></div>
+              <div class="tab2"></div>
+              <div class="tab3"></div>
+            </div>
+            <div class="editor">
+              <pre id="editor">function foo(items) {
+                  var i;
+                  for (i = 0; i &lt; items.length; i++) {
+                      alert("Ace Rocks " + items[i]);
+                  }
+              }</pre>
+
+              <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+              <script>
+                  var editor = ace.edit("editor");
+                  editor.setTheme("ace/theme/twilight");
+                  editor.session.setMode("ace/mode/javascript");
+              </script>
+            </div>
+            <div class="bottom-editor-tab">
+              <div class="submit"></div>
+            </div>
+          </div>
+          <div class="response"></div>
+        </div>
+      </div>
+    </main>
 </body>
