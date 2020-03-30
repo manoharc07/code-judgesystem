@@ -4,9 +4,18 @@
   <link rel="stylesheet" href="CSS/tablestyle.css" />
   <link rel="stylesheet" href="CSS/editor.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      // get the required parameter
+      const id = urlParams.get('prob_id');
+      var prob="problems/prob"+id+".html";
+      $("#problem-container").load(prob);
+    });
+  </script>
 </head>
-
 <body>
   <nav class="navbar">
     <ul class="navbar-nav">
@@ -96,7 +105,10 @@
   </nav>
     <main>
       <div class="main-container">
-        <div class="left-pane"></div>
+        <div class="left-pane" id="problem-container">
+
+
+        </div>
         <div class="right-pane">
           <div class="editor-container">
             <div class="top-editor-tab">
@@ -128,7 +140,7 @@
               </script>
             </div>
             <div class="bottom-editor-tab">
-              <div class="submit"><button type="button" id="submit-btn">Run & Submit</div>
+              <div class="submit"><button type="button" id="submit-btn">Run</div>
             </div>
           </div>
           <div class="response"></div>

@@ -10,8 +10,8 @@
 .left-pane {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 42%;
+  align-items: flex-start;
+  width: 45%;
   height: 100%;
   padding-left: 2px;
   padding-top: 2px;
