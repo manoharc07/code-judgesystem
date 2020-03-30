@@ -2,10 +2,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/tablestyle.css" />
-  <link rel="stylesheet" hre"CSS/editor.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
-    rel="stylesheet"/>
+  <link rel="stylesheet" href="CSS/editor.css"/>
+  <linkhref="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+  <link href="codemirror/lib/codemirror.css" rel="stylesheet">
+  <script src="codemirror/lib/codemirror.js"></script>
+  <link href="codemirror/addon/display/fullscreen.css" rel="stylesheet">
+  <script src="codemirror/mode/clike/clike.js"></script>
+  <link href="codemirror/theme/base16-dark.css" rel="stylesheet">
+  <script src="codemirror/addon/edit/closebrackets.js"></script>
+  <script src="codemirror/addon/edit/matchbrackets.js"></script>
 </head>
 
 <body>
@@ -95,25 +100,6 @@
       </li>
     </ul>
   </nav>
-
   <main>
-    <div class="container" id="main-container">
-      <div class="problem-container" id="prob-cont">
-
-      </div>
-      <div class="editor-toptab" id="editor-toptab">
-
-      </div>
-      <div class="editor-area" id="editor-textarea">
-
-      </div>
-      <div class="editor-bottomtab" id="editor-bottomtab">
-
-      </div>
-      <div class="code-response" id="response">
-
-      </div>
-
-    </div>
   </main>
 </body>
