@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/editor.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         const queryString = window.location.search;
@@ -106,10 +107,7 @@
     </nav>
       <main>
         <div class="main-container">
-          <div class="left-pane" id="problem-container">
-
-
-          </div>
+          <div class="left-pane" id="problem-container"></div>
           <div class="right-pane">
             <div class="editor-container">
               <div class="top-editor-tab">
@@ -132,8 +130,6 @@
                         alert("Ace Rocks " + items[i]);
                     }
                 }</pre>
-
-                <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
                 <script>
                     var editor = ace.edit("editor");
                     editor.setTheme("ace/theme/twilight");
