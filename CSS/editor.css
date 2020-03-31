@@ -19,7 +19,7 @@
   padding-left: 2px;
   padding-top: 2px;
   padding-right: 4px;
-  border-right: 1px solid red;
+  border-right: 1px double red;
 }
 
 .left-pane>* {
