@@ -12,7 +12,7 @@
       // get the required parameter
       const id = urlParams.get('prob_id');
       var prob="problems/prob"+id+".html";
-      $("#problem-container").load(prob);
+      $("#problem-container").load("problems/prob13.html");
     });
   </script>
 </head>
