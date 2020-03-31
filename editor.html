@@ -8,14 +8,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-
+      $(document).ready(function(){
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         // get the required parameter
         const id = urlParams.get('prob_id');
         var prob="problems/prob"+id+".html";
         $("#problem-container").load(prob);
-      
+      });
     </script>
   </head>
   <body>
