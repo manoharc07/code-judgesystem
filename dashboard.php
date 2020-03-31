@@ -116,7 +116,7 @@
         $result=mysqli_query($conn,$sql);
         while($row=mysqli_fetch_assoc($result)){
           $prob_id=$row['prob_id'];
-          echo "<tr><td>$count</td><td><a href='editor.html?prob_id=$prob_id'>".$row['prob_name']."</a></td><td>".$row['score']."</td><td></td><td></td></tr>";
+          echo "<tr><td>$count</td><td><a href='editor.html?probid=$prob_id'>".$row['prob_name']."</a></td><td>".$row['score']."</td><td></td><td></td></tr>";
           $count=$count+1;
         }
         ?>
