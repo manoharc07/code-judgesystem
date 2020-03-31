@@ -13,7 +13,7 @@
         const urlParams = new URLSearchParams(queryString);
         // get the required parameter
         const id = urlParams.get('prob_id');
-        var prob="problems/prob"+id+".html";
+        const prob="problems/prob"+id+".html";
         $("#problem-container").load(prob);
       });
     </script>
