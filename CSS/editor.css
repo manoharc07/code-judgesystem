@@ -200,7 +200,8 @@ div.left-pane::-webkit-scrollbar-thumb {
   background: #202424;
 }
 
-#editor {
+#editor-area {
+  font-family: 'Fira Mono', monospace !important;  
   height: 100%;
   width: 100%;
   padding: 0 0 0 0;

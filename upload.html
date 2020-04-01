@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Upload</title>
+		<link rel="stylesheet" type="text/css" href="CSS/upload.css" media="all">
+		<script src="https://cdn.tiny.cloud/1/em8lmiijbqvpt1w0p0zkg93lmk9uafce6517ai1wsrfmuu8e/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+		<script> tinymce.init({selector: '#element_2'});</script>
+	</head>
+	<body id="main_body" >
+		<div id="form_container">
+			<form id="prob_form"  method="post" action="test.php">
+				<div class="form_description">
+					<h2>Problem Upload Form</h2>
+					<p></p>
+				</div>
+				<ul>
+					<li>
+						<label class="description"> Problem Name </label>
+						<div>
+							<input required id="input-title" name="title" class="element text large" type="text" maxlength="255" value=""/>
+						</div>
+					</li>
+					<li id="li_5" >
+					<label class="description">Problem Difficulty </label>
+						<span>
+							<input required id="element_5_1" name="diff" class="element radio" type="radio" value="Easy" />
+								<label class="choice" >Easy</label>
+								<input id="element_5_2" name="diff" class="element radio" type="radio" value="Medium" />
+								<label class="choice" >Medium</label>
+								<input id="element_5_3" name="diff" class="element radio" type="radio" value="Hard" />
+								<label class="choice" >Hard</label>
+						</span>
+
+					</li>
+					<li id="li_2" >
+						<label class="description" >Problem Description </label>
+						<div>
+							<textarea required id="element_2" name="desc" class="element textarea large"></textarea>
+						</div>
+					</li>
+					<li id="li_3" >
+						<label class="description" >Input Testcase </label>
+						<div>
+							<textarea required id="element_3" name="test-in" class="element textarea medium"></textarea>
+						</div>
+					</li>
+					<li id="li_4" >
+						<label class="description">Output Testcase </label>
+						<div>
+							<textarea required id="element_4" name="test-out" class="element textarea medium"></textarea>
+						</div>
+					</li>
+					<li id="li_5" >
+						<label class="description" >Problem Score </label>
+						<div>
+							<input id="element_5" name="element_5" class="element text small" type="number" min="1" max="100"/>
+						</div>
+					</li>
+					<li class="buttons" align="center">
+						<button type="submit">Upload</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</body>
+</html>
