@@ -13,6 +13,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 body::-webkit-scrollbar {
@@ -20,11 +21,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #cecedb;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #1df5c6;
+  background: #202424;
 }
 
 main {
