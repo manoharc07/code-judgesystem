@@ -111,10 +111,9 @@
           <div class="right-pane">
             <div class="editor-container">
               <div class="top-editor-tab">
-                <div class="tab1"><button type="buttpn" id="reset">Reset</button></div>
-                <div class="tab2"><button type="button" id="theme">Theme</button></div>
-                <div class="tab3">
-
+                <div class="tab1"><button class="btn" type="buttpn" id="reset">Reset</button></div>
+                <div class="tab2"><button class="btn" type="button" id="theme">Themify</button></div>
+                <div class="tab3" >
                   <select class="drop-down" id="lang">
                     <option>C++</option>
                     <option>C</option>
@@ -126,10 +125,12 @@
               <div class="editor"></div>
 
               <div class="bottom-editor-tab">
-                <div class="submit"><button class="submit-button" type="button" id="submit-btn">Run</div>
+                <div class="submit"><button class="submit-button" type="button" id="submit-btn">Submit</div>
               </div>
             </div>
-            <div class="response"></div>
+            <div class="response" id="response-container">
+              <p>No Submissions : (<br>Submit the Code to get Results.</p>
+            </div>
           </div>
         </div>
       </main>
