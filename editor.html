@@ -12,10 +12,10 @@
     <script src="codemirror/lib/codemirror.js"></script>
     <link href="codemirror/addon/display/fullscreen.css" rel="stylesheet">
     <script src="codemirror/mode/javascript/javascript.js"></script>
-    <link href="codemirror/theme/twilight.css" rel="stylesheet">
+    <link href="codemirror/theme/eclipse.css" rel="stylesheet">
+    <link href="codemirror/theme/base16-dark.css" rel="stylesheet">
     <script src="codemirror/addon/edit/closebrackets.js"></script>
     <script src="codemirror/addon/edit/matchbrackets.js"></script>
-
     <script type="text/javascript">
       $(document).ready(function(){
         const queryString = window.location.search;
@@ -26,6 +26,22 @@
         $("#problem-container").load(prob);
       });
     </script>
+    <script type="text/javascript">
+      function changeTheme(){
+        if(editor.getOption('theme')=="eclipse"){
+
+          editor.setOption("theme","base16-dark");
+        }
+        else {
+          editor.setOption('theme','eclipse')
+        }
+      }
+      function resetCode(){
+        if(confirm("Clear the code?")){
+          editor.setValue("");
+        }
+      }
+      </script>
   </head>
   <body>
     <nav class="navbar">
@@ -120,8 +136,8 @@
           <div class="right-pane">
             <div class="editor-container">
               <div class="top-editor-tab">
-                <div class="tab1"><button class="btn" type="buttpn" id="reset">Reset</button></div>
-                <div class="tab2"><button class="btn" type="button" id="theme">Themify</button></div>
+                <div class="tab1"><button class="btn" type="buttpn" id="reset" onclick="resetCode()">Reset</button></div>
+                <div class="tab2"><button class="btn" type="button" id="theme" onclick="changeTheme()">Themify</button></div>
                 <div class="tab3" >
                   <select class="drop-down" id="lang">
                     <option>C++</option>
@@ -135,14 +151,17 @@
                 <div id="edit-area"></div>
               </div>
               <script>
-            			let codemirror = CodeMirror(
+            			this.editor = CodeMirror(
             			document.getElementById("edit-area"),
             			{
-            					lineNumbers     : true,
-            					mode            : "javascript",
-            					theme           : "twilight",
-            					tabSize         : 4,
-            					indentUnit      : 4,
+            					lineNumbers      : true,
+            					mode             : "javascript",
+            					theme            : "eclipse",
+            					tabSize          : 4,
+            					indentUnit       : 4,
+                      autoCloseBrackets: true,
+                      matchBrackets    : true,
+                      
             		});
             	</script>
               <div class="bottom-editor-tab">

@@ -2,11 +2,13 @@
 
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  font-family:monospace;
-  font-size: 14px;
-  height: inherit;
+  font-family:"Consolas",monospace;
+  font-size: 15px;
+  height: 100%;
+  max-height: 100%;
   color: black;
   direction: ltr;
+  display: block;
 }
 
 /* PADDING */
@@ -34,7 +36,7 @@
 .CodeMirror-linenumber {
   padding: 0 3px 0 5px;
   min-width: 20px;
-  text-align: left;
+  text-align: rigt;
   color: #999;
   white-space: nowrap;
 }
