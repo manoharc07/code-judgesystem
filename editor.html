@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+    <link href="codemirror/lib/codemirror.css" rel="stylesheet">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <link href="codemirror/addon/display/fullscreen.css" rel="stylesheet">
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <link href="codemirror/theme/twilight.css" rel="stylesheet">
+    <script src="codemirror/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/addon/edit/matchbrackets.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -128,14 +132,19 @@
                 </div>
               </div>
               <div class="editor">
-                <textarea id="editor-area"></textarea>
+                <div id="edit-area"></div>
               </div>
               <script>
-                var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('editor-area'), {
-                  value: "function myScript(){return 100;}\n",
-                  mode:  "javascript"
-                });
-              </script>
+            			let codemirror = CodeMirror(
+            			document.getElementById("edit-area"),
+            			{
+            					lineNumbers     : true,
+            					mode            : "javascript",
+            					theme           : "twilight",
+            					tabSize         : 4,
+            					indentUnit      : 4,
+            		});
+            	</script>
               <div class="bottom-editor-tab">
                 <div class="submit"><button class="submit-button" type="button" id="submit-btn">Submit</div>
               </div>

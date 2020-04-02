@@ -2,8 +2,9 @@
 
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
-  font-family: monospace;
-  height: 300px;
+  font-family:monospace;
+  font-size: 14px;
+  height: inherit;
   color: black;
   direction: ltr;
 }
@@ -33,7 +34,7 @@
 .CodeMirror-linenumber {
   padding: 0 3px 0 5px;
   min-width: 20px;
-  text-align: right;
+  text-align: left;
   color: #999;
   white-space: nowrap;
 }
