@@ -8,15 +8,18 @@
   else if($lang=='c++'){
     $extension=".cpp";
   }
-  else{
+  else if($lang=="Java"){
     $extension=".java";
+  }
+  else{
+    $extension=".py";
   }
 
   $codefile="temp".$extension;
-  $fp=fopen('../configs/'.$codefile,'w');
+  $fp=fopen('../temp/'.$codefile,'w');
   fwrite($fp,$code);
   fclose($fp);
 
-  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../configs/grader.py '.$codefile.' '.$prob_id.'> result.txt');
+  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judge/judger.py '.$codefile.' '.$prob_id.'> temp/output.txt');
 
 ?>

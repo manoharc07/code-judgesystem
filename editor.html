@@ -63,7 +63,7 @@
         var input=document.getElementById('lang');
         var lang=input.options[input.selectedIndex].value;
         $.ajax({
-          url: 'configs/submit.php',
+          url: 'includes/submit.php',
           type: 'POST',
           data: {
             prob_id: probid ,
@@ -71,7 +71,7 @@
             code: userCode
           },
           success:function(){
-            $('#response').load("configs/result.txt")
+            $('#response').load("temp/output.txt")
           }
 
         });

@@ -1,4 +1,0 @@
-Executing code checker...
-Compiling... OK(200)
-Running... OK(200)
-Verdict... ACCEPTED(201)
