@@ -4,8 +4,6 @@
   /* Set height, width, borders, and global font properties here */
   font-family:"Consolas",monospace;
   font-size: 15px;
-  height: 100%;
-  max-height: 100%;
   color: black;
   direction: ltr;
   display: block;
