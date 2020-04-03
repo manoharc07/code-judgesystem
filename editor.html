@@ -11,7 +11,8 @@
     <link href="codemirror/lib/codemirror.css" rel="stylesheet">
     <script src="codemirror/lib/codemirror.js"></script>
     <link href="codemirror/addon/display/fullscreen.css" rel="stylesheet">
-    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="codemirror/mode/python/python.js"></script>
+    <script src="codemirror/mode/clike/clike.js"></script>
     <link href="codemirror/theme/eclipse.css" rel="stylesheet">
     <link href="codemirror/theme/base16-dark.css" rel="stylesheet">
     <script src="codemirror/addon/edit/closebrackets.js"></script>
@@ -21,8 +22,8 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         // get the required parameter
-        const id = urlParams.get('probid');
-        const prob="problems/prob"+id+".html";
+         probid = urlParams.get('probid');
+         prob="problems/prob"+probid+".html";
         $("#problem-container").load(prob);
       });
     </script>
@@ -37,9 +38,43 @@
         }
       }
       function resetCode(){
-        if(confirm("Clear the code?")){
+        if(confirm("Clear Editor?")){
           editor.setValue("");
         }
+      }
+      function changeLanguage(){
+        var input=document.getElementById('lang');
+        var lang=input.options[input.selectedIndex].value;
+        if (lang=="c++"){
+          editor.setOption("mode","text/x-c++src");
+        }
+        if (lang=="c") {
+          editor.setOption("mode","text/x-csrc");
+        }
+        if (lang=="java") {
+          editor.setOption("mode","text/x-java");
+        }
+        if (lang=="python"){
+          editor.setOption("mode","python");
+        }
+      }
+      function submitCode(){
+        var userCode=editor.getValue();
+        var input=document.getElementById('lang');
+        var lang=input.options[input.selectedIndex].value;
+        $.ajax({
+          url: 'configs/submit.php',
+          type: 'POST',
+          data: {
+            prob_id: probid ,
+            language: lang,
+            code: userCode
+          },
+          success:function(){
+            $('#response').load("configs/result.txt")
+          }
+
+        });
       }
       </script>
   </head>
@@ -139,11 +174,11 @@
                 <div class="tab1"><button class="btn" type="buttpn" id="reset" onclick="resetCode()">Reset</button></div>
                 <div class="tab2"><button class="btn" type="button" id="theme" onclick="changeTheme()">Themify</button></div>
                 <div class="tab3" >
-                  <select class="drop-down" id="lang">
-                    <option>C++</option>
-                    <option>C</option>
-                    <option>Java</option>
-                    <option>Python</option>
+                  <select class="drop-down" onchange="changeLanguage()" id="lang">
+                    <option value="c++" >C++</option>
+                    <option value="c">C</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
                   </select>
                 </div>
               </div>
@@ -155,20 +190,22 @@
             			document.getElementById("edit-area"),
             			{
             					lineNumbers      : true,
-            					mode             : "javascript",
+            					mode             : "text/x-c++src",
             					theme            : "eclipse",
             					tabSize          : 4,
             					indentUnit       : 4,
                       autoCloseBrackets: true,
-                      matchBrackets    : true,
-                      
+                      matchBrackets    : true
+
             		});
             	</script>
               <div class="bottom-editor-tab">
-                <div class="submit"><button class="submit-button" type="button" id="submit-btn">Submit</div>
+                <div class="submit">
+                  <button class="submit-button" type="button" id="submit-btn" onclick="submitCode()" >Submit</button>
+                  </div>
               </div>
             </div>
-            <div class="response" id="response-container">
+            <div class="response" id="response">
               <p>No Submissions : (<br>Submit the Code to get Results.</p>
             </div>
           </div>

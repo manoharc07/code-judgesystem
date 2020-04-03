@@ -176,11 +176,12 @@ def codechecker(filename, inputfile=None, expectedoutput=None, timeout=1, check=
 
 
 if __name__ == '__main__':
-
+    codefile=(sys.argv[1])
+    id=str((sys.argv[2]))
     codechecker(
-        filename='add.c',               # Source code file
-        inputfile='prob13input.txt',                  # Input file
-        expectedoutput='prob13output.txt',     # Expected output
+        filename=codefile,               # Source code file
+        inputfile='../problems/prob'+id+'input.txt',                  # Input file
+        expectedoutput='../problems/prob'+id+'output.txt',     # Expected output
         timeout=1,                              # Time limit
         check=True                              # Set to true to check actual output against expected output
     )
