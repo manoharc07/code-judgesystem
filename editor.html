@@ -45,16 +45,16 @@
       function changeLanguage(){
         var input=document.getElementById('lang');
         var lang=input.options[input.selectedIndex].value;
-        if (lang=="c++"){
+        if (lang=="C++"){
           editor.setOption("mode","text/x-c++src");
         }
-        if (lang=="c") {
+        if (lang=="C") {
           editor.setOption("mode","text/x-csrc");
         }
-        if (lang=="java") {
+        if (lang=="Java") {
           editor.setOption("mode","text/x-java");
         }
-        if (lang=="python"){
+        if (lang=="Python3"){
           editor.setOption("mode","python");
         }
       }
@@ -71,7 +71,7 @@
             code: userCode
           },
           success:function(){
-            $('#response').load("temp/output.txt")
+            $('#response').load("temp/output.txt");
           }
 
         });
@@ -175,10 +175,10 @@
                 <div class="tab2"><button class="btn" type="button" id="theme" onclick="changeTheme()">Themify</button></div>
                 <div class="tab3" >
                   <select class="drop-down" onchange="changeLanguage()" id="lang">
-                    <option value="c++" >C++</option>
-                    <option value="c">C</option>
-                    <option value="java">Java</option>
-                    <option value="python">Python</option>
+                    <option value="C++" >C++</option>
+                    <option value="C">C</option>
+                    <option value="Java">Java</option>
+                    <option value="Python3">Python</option>
                   </select>
                 </div>
               </div>

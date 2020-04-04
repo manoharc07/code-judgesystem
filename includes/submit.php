@@ -2,10 +2,10 @@
   $code=$_POST['code'];
   $prob_id=$_POST['prob_id'];
   $lang=$_POST['language'];
-  if($lang=='c'){
+  if($lang=='C'){
     $extension=".c";
   }
-  else if($lang=='c++'){
+  else if($lang=='C++'){
     $extension=".cpp";
   }
   else if($lang=="Java"){
@@ -20,6 +20,6 @@
   fwrite($fp,$code);
   fclose($fp);
 
-  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judge/judger.py '.$codefile.' '.$prob_id.'> temp/output.txt');
+  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' > ../temp/output.txt');
 
 ?>

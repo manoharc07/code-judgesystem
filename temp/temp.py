@@ -1,6 +1,3 @@
 n=int(input())
-sum=0
-for i in n:
-    x=int(input())
-    sum+=x
-print(sum,end=
+lis=[int(x) for x in input().split()]
+print(sum(lis),end="")
