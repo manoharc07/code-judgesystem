@@ -1,8 +1,8 @@
 <?php
   session_start();
-  if(!isset($_SESSION['UID']))
+  if(isset($_SESSION['UID']))
   {
-    header("Location:index.php");
+    header("Location:dashboard.php");
   }
 ?>
 <html >

@@ -4,5 +4,5 @@
   session_unset();
   session_destroy();
   $_SESSION = array();
-  header("Location:http://localhost/judgesystem/index.php?feedback=signout");
+  header("Location:../index.php?feedback=signout");
 ?>

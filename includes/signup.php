@@ -9,9 +9,9 @@
   VALUES (NULL,'norm','$name','$mob','$email','$usr','$pwd','0');";
   $result=mysqli_query($conn,$sql);
   if($result!=True){
-    header("Location:http://localhost/judgesystem/index.php?feedback=exist");
+    header("Location:../index.php?feedback=exist");
   }
   else{
-    header("Location:http://localhost/judgesystem/index.php?feedback=success");
+    header("Location:../index.php?feedback=success");
   }
  ?>
