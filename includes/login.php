@@ -1,9 +1,9 @@
 <?php
   session_start();
   include_once '..\includes\dbConnector.php';
-  $email=$_POST['email'];
+  $id=$_POST['id'];
   $pwd=$_POST['pwd'];
-  $sql="SELECT pwd,UID,Username,User_type FROM profile where Email='$email'";
+  $sql="SELECT pwd,UID,Username,User_type FROM profile where Email='$id' OR username='$id'";
   $result=mysqli_query($conn,$sql);
   if($result->num_rows==0){
     header("Location:../index.php?feedback=null");

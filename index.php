@@ -54,7 +54,7 @@
               }
               ?>
             </span>
-            <input  type="email" name="email" required="required" placeholder="Email ID">
+            <input  type="text" name="id" required="required" placeholder="Username or Email">
             <input  type="password" name="pwd" required="required" placeholder="Password">
             <input type="submit" value="sign in">
           </form>
