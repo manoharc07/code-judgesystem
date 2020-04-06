@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['UID']))
+  {
+    header("Location:index.php");
+  }
+?>
 <html >
   <head>
     <link href="CSS\login.css" rel="stylesheet">
