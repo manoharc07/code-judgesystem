@@ -27,7 +27,7 @@ if(len(mycursor.fetchall())>0):
 
 r = coderunner.code(src, language, expected_output, inputfile)
 r.run()
-
+print(r.getStatus())
 #POST SUBMISSION WORK
 
 keywords={"Accepted":"ACC","Wrong Answer":"WA","Time Limit Exceeded":"TLE","Compilation Error":"CE"}
@@ -37,7 +37,7 @@ prob_name=result[0][0]
 status=keywords[r.getStatus()]
 error=r.getError()
 run_time=r.getTime()
-memory=str(r.getMemory())+"Bytes"
+memory=str(r.getMemory())
 
 sql="INSERT INTO submissions (prob_id,UID,prob_name,Language,run_time,memory,result) VALUES (%s,%s,%s,%s,%s,%s,%s)"
 values=(id,user,prob_name,language,run_time,memory,status)
@@ -63,5 +63,4 @@ else:
     mycursor.execute(sql)
     sql="UPDATE problems SET attempts = attempts + 1 WHERE prob_id="+id
     mycursor.execute(sql)
-
 conn.commit()

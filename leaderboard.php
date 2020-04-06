@@ -71,7 +71,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="includes/signout.php" class="nav-link">
 
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <g class="fa-group">

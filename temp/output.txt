@@ -1,5 +1,1 @@
-Run r :
-Status : Accepted
-None
-Execution Time : 0.119
-Memory : 12756
+Accepted

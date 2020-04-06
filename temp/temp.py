@@ -1,3 +1,3 @@
 n=int(input())
-lis=[int(x) for x in input().split()]
-print(sum(lis),end="")
+x=[int(i) for i in input().split()]
+print(sum(x))

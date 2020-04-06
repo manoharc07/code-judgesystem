@@ -18,7 +18,7 @@
         header("Location:http://localhost/judgesystem/dashboard.php");
       }
       else{
-        header("Location:http://localhost/judgesystem/prob_upload.php");
+        header("Location:http://localhost/judgesystem/upload.html");
       }
     }
     else{

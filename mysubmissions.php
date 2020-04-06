@@ -71,7 +71,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="includes/signout.php" class="nav-link">
 
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <g class="fa-group">
@@ -104,7 +104,9 @@
             <th>#</th>
             <th>Problem</th>
             <th>Language</th>
-            <th>time</th>
+            <th>Time</th>
+            <th>Execution Time</th>
+            <th>Memory</th>
             <th>Result</th>
           </tr>
         </thead>
@@ -115,7 +117,7 @@
           $count=1;
           $result=mysqli_query($conn,$sql);
           while($row=mysqli_fetch_assoc($result)){
-            echo "<tr><td>$count</td><td>".$row['prob_name']."</td><td>".$row['Language']."</td><td>".$row['time']."</td><td>".$row['result']."</td></tr>";
+            echo "<tr><td>$count</td><td>".$row['prob_name']."</td><td>".$row['Language']."</td><td>".$row['sub_time']."</td><td>".$row['run_time']."</td><td>".$row['memory']." Bytes</td><td>".$row['result']."</td></tr>";
             $count=$count+1;
           }
           ?>

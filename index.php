@@ -41,6 +41,9 @@
                 if($mssg=="invalid"){
                   echo "Oops password is incorrect.";
                 }
+                if($mssg=="signout"){
+                  echo "Successfully Logged out.";
+                }
               }
               ?>
             </span>
