@@ -202,6 +202,7 @@ div.left-pane::-webkit-scrollbar-track {
 div.left-pane::-webkit-scrollbar-thumb {
   background: #202424;
 }
+
 #edit-area{
   position: absolute;
   height: 100%;
