@@ -2,6 +2,7 @@
   $code=$_POST['code'];
   $prob_id=$_POST['prob_id'];
   $lang=$_POST['language'];
+  $user=$_SESSION['UID'];
   if($lang=='C'){
     $extension=".c";
   }
@@ -20,6 +21,6 @@
   fwrite($fp,$code);
   fclose($fp);
 
-  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' > ../temp/output.txt');
+  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user' > ../temp/output.txt');
 
 ?>
