@@ -114,17 +114,18 @@
           <th>Score</th>
           <th>Difficulty</th>
           <th>Acceptance</th>
+          <th>Attempts</th>
         </tr>
       </thead>
       <tbody>
         <?php
         include_once 'includes/dbConnector.php';
-        $sql="SELECT prob_id,prob_name,score FROM problems";
+        $sql="SELECT * FROM problems";
         $count=1;
         $result=mysqli_query($conn,$sql);
         while($row=mysqli_fetch_assoc($result)){
           $prob_id=$row['prob_id'];
-          echo "<tr><td>$count</td><td><a href='editor.html?probid=$prob_id'>".$row['prob_name']."</a></td><td>".$row['score']."</td><td></td><td></td></tr>";
+          echo "<tr><a href='editor.php?probid=$prob_id'><td>$count</td><td>".$row['prob_name']."</td><td>".$row['score']."</td><td>".$row['difficulty']."</td><td>".($row['acceptance']*100)."%</td><td>".$row['attempts']."</td></a></tr>";
           $count=$count+1;
         }
         ?>

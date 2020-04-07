@@ -121,7 +121,7 @@
         <tbody>
           <?php
           include_once 'includes\dbConnector.php';
-          $sql="SELECT * FROM submissions";
+          $sql="SELECT * FROM submissions ORDER BY sub_id DESC";
           $count=1;
           $result=mysqli_query($conn,$sql);
           while($row=mysqli_fetch_assoc($result)){

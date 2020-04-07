@@ -117,7 +117,7 @@
         <tbody>
           <?php
           include_once 'includes/dbConnector.php';
-          $sql="SELECT * FROM profile ORDER BY score";
+          $sql="SELECT * FROM profile ORDER BY score DESC";
           $count=1;
           $result=mysqli_query($conn,$sql);
           while($row=mysqli_fetch_assoc($result)){
