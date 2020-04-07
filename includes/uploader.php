@@ -1,24 +1,19 @@
 <?php
   $name=$_POST['prob_name'];
-  $score=$_POST['score'];
-  $stmt=$_POST['Statement'];
-  $const=$_POST['const'];
-  $samp=$_POST['sample'];
-  $inp=$_POST['input'];
-  $out=$_POST['output'];
+  $score=$_POST['Score'];
+  $desc=$_POST['Description'];
+  $diff=$_POST['Difficulty'];
+  $inp=$_POST['Input'];
+  $out=$_POST['Output'];
   include_once "..\includes\dbConnector.php";
-  $sql="INSERT INTO problems(prob_id,prob_name,score)values(NULL,'$name','$score')";
+  $sql="INSERT INTO problems(prob_id,prob_name,score,difficulty)values(NULL,'$name','$score','$diff')";
   $result=mysqli_query($conn,$sql);
   if($result!=false){
     $id=mysqli_insert_id($conn);
     $file_path='..\problems\prob'.$id.'.html' ;
     $fp=fopen($file_path,'w');
-    fwrite($fp,'<b>Statement</b><br>');
-    fwrite($fp,$stmt);
-    fwrite($fp,'<br><b>Constraints</b><br>');
-    fwrite($fp,$const);
-    fwrite($fp,'<br><b>Sample Input</b><br>');
-    fwrite($fp,$samp);
+    fwrite($fp,'<span style="font-family: &quot;andale mono&quot;, monospace;" data-mce-style="font-family: \'andale mono\', monospace;"><h2><strong>'.$name.'</strong></h2></span>');
+    fwrite($fp,$desc);
     fclose($fp);
     $file_path='..\problems\prob'.$id.'input.txt';
     $fp=fopen($file_path,'w');
