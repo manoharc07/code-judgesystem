@@ -64,3 +64,4 @@ else:
     sql="UPDATE problems SET attempts = attempts + 1 WHERE prob_id="+id
     mycursor.execute(sql)
 conn.commit()
+print(status)

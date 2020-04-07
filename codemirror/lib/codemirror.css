@@ -4,6 +4,7 @@
   /* Set height, width, borders, and global font properties here */
   font-family:"Consolas",monospace;
   font-size: 15px;
+  letter-spacing: 0.5px;
   color: black;
   direction: ltr;
   display: block;

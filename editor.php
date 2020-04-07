@@ -21,8 +21,9 @@
     <script src="codemirror/mode/python/python.js"></script>
     <script src="codemirror/mode/clike/clike.js"></script>
     <link href="codemirror/theme/eclipse.css" rel="stylesheet">
-    <link href="codemirror/theme/base16-dark.css" rel="stylesheet">
+    <link href="codemirror/theme/monokai.css" rel="stylesheet">
     <script src="codemirror/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/addon/display/fullscreen.js"></script>
     <script src="codemirror/addon/edit/matchbrackets.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -38,7 +39,7 @@
       function changeTheme(){
         if(editor.getOption('theme')=="eclipse"){
 
-          editor.setOption("theme","base16-dark");
+          editor.setOption("theme","monokai");
         }
         else {
           editor.setOption('theme','eclipse')
@@ -78,7 +79,7 @@
             code: userCode
           },
           success:function(){
-            $('#response').load();
+            alert("Success");
           }
 
         });
@@ -202,7 +203,15 @@
             					tabSize          : 4,
             					indentUnit       : 4,
                       autoCloseBrackets: true,
-                      matchBrackets    : true
+                      matchBrackets    : true,
+                      extraKeys: {
+                        "F11": function(cm) {
+                          cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+                        },
+                        "Esc": function(cm) {
+                          if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+                        }
+                      }
 
             		});
             	</script>
