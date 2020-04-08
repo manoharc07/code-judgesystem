@@ -9,8 +9,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/response.css"/>
     <link rel="stylesheet" href="CSS/tablestyle.css" />
     <link rel="stylesheet" href="CSS/editor.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -79,7 +81,7 @@
             code: userCode
           },
           success:function(){
-            alert("Success");
+            $('#response').load('temp/output.html');
           }
 
         });
@@ -222,7 +224,7 @@
               </div>
             </div>
             <div class="response" id="response">
-              <p>No Submissions : (<br>Submit the Code to get Results.</p>
+              <p>No Submissions :( Submit the Code to get Results.</p>
             </div>
           </div>
         </div>

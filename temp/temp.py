@@ -1,2 +1,3 @@
 n=input()
-print(n)
+while True:
+    print("hello world")
