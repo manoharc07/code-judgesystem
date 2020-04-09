@@ -2,8 +2,9 @@ import coderunner
 import sys
 import datetime
 import mysql.connector
+
 conn=mysql.connector.connect(
-    host="localhost",
+    host="localhost",  
     user="root",
     passwd="",
     database="judgesystem"

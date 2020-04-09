@@ -51,6 +51,9 @@
                 if($mssg=="signout"){
                   echo "Successfully Logged out.";
                 }
+                if($mssg=="user"){
+                  echo "Login as Admin";
+                }
               }
               ?>
             </span>

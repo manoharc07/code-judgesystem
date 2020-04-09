@@ -18,7 +18,7 @@
         header("Location:../dashboard.php");
       }
       else{
-        header("Location:../upload.html");
+        header("Location:../upload.php");
       }
     }
     else{

@@ -21,5 +21,5 @@
   $fp=fopen('../temp/'.$codefile,'w');
   fwrite($fp,$code);
   fclose($fp);
-  exec('C:\Users\manoh\AppData\Local\Programs\Python\Python37\python ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');
+  exec('..\judger\env\Scripts\python.exe ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');
   ?>
