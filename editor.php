@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="CSS/response.css"/>
     <link rel="stylesheet" href="CSS/tablestyle.css" />
     <link rel="stylesheet" href="CSS/editor.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -70,21 +71,29 @@
       }
       function submitCode(){
         var userCode=editor.getValue();
-        var input=document.getElementById('lang');
-        var lang=input.options[input.selectedIndex].value;
-        $.ajax({
-          url: 'includes/submit.php',
-          type: 'POST',
-          data: {
-            prob_id: probid ,
-            language: lang,
-            code: userCode
-          },
-          success:function(){
-            $('#response').load('temp/output.html');
-          }
+        if (userCode==""){
+          alert("Code is empty");
+        }
+        else{
+          var input=document.getElementById('lang');
+          var lang=input.options[input.selectedIndex].value;
+          $('#response').load('animations/responsewaiting.html');
+          $('#submit-btn').hide();
+          $.ajax({
+            url: 'includes/submit.php',
+            type: 'POST',
+            data: {
+              prob_id: probid ,
+              language: lang,
+              code: userCode
+            },
+            success:function(){
+              $('#response').load('temp/output.html');
+              $('#submit-btn').show();
+            }
+           });
 
-        });
+        }
       }
       </script>
   </head>
@@ -218,7 +227,7 @@
             		});
             	</script>
               <div class="bottom-editor-tab">
-                <div class="submit">
+                <div class="submit" id="submit-container">
                   <button class="submit-button" type="button" id="submit-btn" onclick="submitCode()" >Submit</button>
                   </div>
               </div>

@@ -1,7 +1,30 @@
 * {
   font-family:'Open Sans' ; /* Change your font family */
 }
-
+.easy{
+  color:#5cb85c;
+  font-weight:bold;
+  text-align: center;
+}
+.medium{
+  color:#f0ad4e;
+  font-weight:bold;
+  text-align: center;
+}
+.hard{
+  color:#d9534f;
+  font-weight:bold;
+  text-align: center;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  color: #009879;
+}
+.content-table tbody tr:hover *{
+  background-color: #ccc;
+}
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -16,9 +39,13 @@
   text-decoration-line: none;
 
 }
+.center{
+  text-align: center;
+}
 .content-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
+  background-color: #f6ffb3;
+  color: #242424;
+  font-weight: 400;
   text-align: left;
   font-weight: bold;
 }
@@ -37,7 +64,7 @@
 }
 
 .content-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #e9ff42;
 }
 
 .content-table tbody tr.active-row {

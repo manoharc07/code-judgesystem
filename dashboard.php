@@ -111,10 +111,10 @@
         <tr>
           <th>#</th>
           <th>Name</th>
-          <th>Score</th>
-          <th>Difficulty</th>
-          <th>Acceptance</th>
-          <th>Attempts</th>
+          <th class="center">Score</th>
+          <th class="center">Difficulty</th>
+          <th class="center">Acceptance</th>
+          <th class="center">Attempts</th>
         </tr>
       </thead>
       <tbody>
@@ -125,7 +125,7 @@
         $result=mysqli_query($conn,$sql);
         while($row=mysqli_fetch_assoc($result)){
           $prob_id=$row['prob_id'];
-          echo "<tr><td>$count</td><td><a href='editor.php?probid=$prob_id'>".$row['prob_name']."</a></td><td>".$row['score']."</td><td>".$row['difficulty']."</td><td>".($row['acceptance']*100)."%</td><td>".$row['attempts']."</td></tr>";
+          echo "<tr><td>$count</td><td><a href='editor.php?probid=$prob_id'>".$row['prob_name']."</a></td><td class='center'>".$row['score']."</td><td class='$row[difficulty]'>".$row['difficulty']."</td><td class='center'>".($row['acceptance']*100)."%</td><td class='center'>".$row['attempts']."</td></tr>";
           $count=$count+1;
         }
         ?>
