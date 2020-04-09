@@ -1,17 +1,17 @@
 # Title Coming Soon
 
-Judgesytem for Coding Challenges
+Judgesystem for Coding Challenges.
 
 ## Getting Started
 
 Download the Zip file and unzip to server directory.
 
-### Prerequisites
+## Prerequisites
 
-Tested on windows.
-Apache,MySql Server,PHP installed.
+Should have PHP,MySQL server installed with latest browser.
 
-### Installing
+## Installing
+
 1. Configure the username,password of SQL server in following files.
 	- includes/dbConnector.php
 	- judger/judge.py
