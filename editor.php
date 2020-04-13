@@ -61,8 +61,10 @@
         if (lang=="C++"){
           editor.setOption("mode","text/x-c++src");
         }
+
         if (lang=="C") {
-          editor.setOption("mode","text/x-csrc");
+          edit
+          or.setOption("mode","text/x-csrc");
         }
         if (lang=="Java") {
           editor.setOption("mode","text/x-java");
