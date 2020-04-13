@@ -4,7 +4,7 @@ A Judgesystem for Coding Challenges.
 
 ## Getting Started
 
-Download the Zip file and unzip to server directory.
+Download the Zip file and extract to server directory.
 
 ## Prerequisites
 
