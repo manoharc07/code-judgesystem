@@ -24,7 +24,7 @@ Should have PHP,MySQL server installed with latest browser.
 	pip3 install coderunner
 	pip3 install mysql-connector
 ```
-- Open [includes/submit.php](https://github.com/manoharc07/judgesystem/blob/master/includes/submit.php) in line 22 with *exec* function  replace the line with following
+- Open [includes/submit.php](https://github.com/manoharc07/judgesystem/blob/master/includes/submit.php) in line 22 with *exec* function  replace the line with following<br/>
 `exec('..\judger\env\Scripts\python3 ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');`
 
 
