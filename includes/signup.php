@@ -1,5 +1,5 @@
 <?php
-  include_once "..\includes\dbConnector.php";
+  include_once "../includes/dbConnector.php";
   $name=$_POST['name'];
   $email=$_POST['email'];
   $mob=$_POST['mob_no'];

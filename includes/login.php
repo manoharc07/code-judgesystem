@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include_once '..\includes\dbConnector.php';
+  include_once '../includes/dbConnector.php';
   $id=$_POST['id'];
   $pwd=$_POST['pwd'];
   $sql="SELECT pwd,UID,Username,User_type FROM profile where Email='$id' OR username='$id'";

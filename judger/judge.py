@@ -4,7 +4,7 @@ import datetime
 import mysql.connector
 
 conn=mysql.connector.connect(
-    host="localhost",  
+    host="localhost",
     user="root",
     passwd="",
     database="judgesystem"
@@ -71,7 +71,7 @@ else:
 conn.commit()
 
 
-file=open(r"..\temp\output.html","w")
+file=open(r"../temp/output.html","w")
 file.write(r'<script src="https://kit.fontawesome.com/f7f3f5bec2.js" crossorigin="anonymous"></script>')
 file.write('\n')
 
