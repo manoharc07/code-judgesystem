@@ -19,10 +19,9 @@
 
   $codefile="temp".$extension;
   $fp=fopen('../temp/'.$codefile,'w');
-  if (flock($fp, LOCK_EX)) {
+
     fwrite($fp,$code);
     exec('../judger/env/Scripts/python.exe ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');
-    flock($fp, LOCK_UN);
-  }
+
   fclose($fp);
   ?>

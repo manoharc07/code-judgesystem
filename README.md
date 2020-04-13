@@ -1,6 +1,6 @@
-# Title Coming Soon
+# Codify
 
-Judgesystem for Coding Challenges.
+A Judgesystem for Coding Challenges.
 
 ## Getting Started
 
@@ -34,9 +34,8 @@ Should have PHP,MySQL server installed with latest browser.
 
 ## Authors
 
-**Manohar C**- *Initial work* 
+**Manohar C**- *Initial work*
 
 ## Acknowledgments
 - Thanks to [Codemirror](https://codemirror.net/index.html) and [Judge0](https://judge0.com/) for development tools.
 * *This is prototype and is not suitable for largescale deployment.*
-

@@ -8,7 +8,7 @@
 <html >
   <head>
     <link href="CSS/login.css" rel="stylesheet">
-    <title>Project Title</title>
+    <title>Codify</title>
   </head>
   <body>
     <div class="container" id="container">
@@ -29,7 +29,7 @@
       <div class="form-container sign-in-container">
           <!-- Sign In form code -->
           <div class="signin-feedback" id="signin-result"></div>
-          <form action="include/login.php" method="post">
+          <form action="includes/login.php" method="post">
             <h1>Sign In</h1>
             <span class="feedback">
 
