@@ -19,9 +19,7 @@
 
   $codefile="temp".$extension;
   $fp=fopen('../temp/'.$codefile,'w');
-
-    fwrite($fp,$code);
-    exec('../judger/env/Scripts/python.exe ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');
-
+  fwrite($fp,$code);
+  exec('..\judger\env\Scripts\python.exe ../judger/judge.py ../temp/'.$codefile.' '.$prob_id.' '.$lang.' '.$user.' >> ../temp/submissionlog.txt');
   fclose($fp);
-  ?>
+?>

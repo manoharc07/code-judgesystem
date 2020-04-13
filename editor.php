@@ -83,6 +83,7 @@
           $.ajax({
             url: 'includes/submit.php',
             type: 'POST',
+            cache: false,
             data: {
               prob_id: probid ,
               language: lang,
