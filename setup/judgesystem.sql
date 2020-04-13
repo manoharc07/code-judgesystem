@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 09, 2020 at 03:09 PM
+-- Generation Time: Apr 13, 2020 at 10:42 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -12,9 +12,17 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
 --
 -- Database: `judgesystem`
 --
+CREATE DATABASE IF NOT EXISTS `judgesystem` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `judgesystem`;
 
 -- --------------------------------------------------------
 
@@ -36,7 +44,7 @@ CREATE TABLE `problems` (
 --
 
 INSERT INTO `problems` (`prob_id`, `prob_name`, `score`, `difficulty`, `acceptance`, `attempts`) VALUES
-(19, 'Balanced Brackets', 30, 'Medium', '0', 1);
+(19, 'Balanced Brackets', 30, 'Medium', '0', 20);
 
 -- --------------------------------------------------------
 
@@ -77,16 +85,9 @@ CREATE TABLE `submissions` (
   `Language` varchar(8) NOT NULL,
   `sub_time` datetime NOT NULL DEFAULT current_timestamp(),
   `run_time` double DEFAULT NULL,
-  `memory` int(11) NOT NULL,
+  `memory` varchar(6) DEFAULT NULL,
   `result` varchar(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `submissions`
---
-
-INSERT INTO `submissions` (`SUB_ID`, `prob_id`, `UID`, `prob_name`, `Language`, `sub_time`, `run_time`, `memory`, `result`) VALUES
-(117, 19, 26, 'Balanced Brackets', 'C++', '2020-04-09 17:50:42', NULL, 0, 'CE');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +136,7 @@ ALTER TABLE `profile`
 -- AUTO_INCREMENT for table `submissions`
 --
 ALTER TABLE `submissions`
-  MODIFY `SUB_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
+  MODIFY `SUB_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=138;
 
 --
 -- Constraints for dumped tables
@@ -148,3 +149,7 @@ ALTER TABLE `submissions`
   ADD CONSTRAINT `submissions_ibfk_1` FOREIGN KEY (`prob_id`) REFERENCES `problems` (`prob_id`),
   ADD CONSTRAINT `submissions_ibfk_2` FOREIGN KEY (`UID`) REFERENCES `profile` (`UID`);
 COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
