@@ -11,6 +11,7 @@
 <html>
 	<head>
 		<title>Upload</title>
+		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="CSS/upload.css" media="all">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdn.tiny.cloud/1/em8lmiijbqvpt1w0p0zkg93lmk9uafce6517ai1wsrfmuu8e/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>

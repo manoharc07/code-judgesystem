@@ -16,7 +16,6 @@
   else{
     $extension=".py";
   }
-
   $codefile="temp".$extension;
   $fp=fopen('../temp/'.$codefile,'w');
   fwrite($fp,$code);

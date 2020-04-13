@@ -7,6 +7,7 @@
 ?>
 <html >
   <head>
+    <link rel="icon" href="favicon.ico" />
     <link href="CSS/login.css" rel="stylesheet">
     <title>Codify</title>
   </head>
