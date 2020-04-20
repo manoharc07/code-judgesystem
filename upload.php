@@ -23,6 +23,13 @@
 			});
 		</script>
 		<script type="text/javascript">
+			function signout(){
+				window.location = "includes/signout.php";
+			}
+			function mainContent(){
+
+				window.location = "dashboard.php";
+			}
 			function uploadProblem(){
 				var name=document.getElementById('input-title').value;
 				var diff=document.querySelector('input[name="diff"]:checked').value;
@@ -50,6 +57,7 @@
 				});
 			}
 		</script>
+		<
 	</head>
 	<body id="main_body" >
 		<div id="form_container">
@@ -103,6 +111,8 @@
 					</li>
 					<li class="buttons" align="center">
 						<button id="btn" type="button" onclick="uploadProblem()">Upload</button>
+						<button id="signout-btn "type="button" onclick="signout()" >Sign Out</button><br><br>
+						<button id="signout-btn "type="button" onclick="mainContent()" >Jump to Main Content</button>
 					</li>
 				</ul>
 			</form>
