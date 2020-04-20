@@ -35,7 +35,7 @@ CREATE TABLE `problems` (
   `prob_name` varchar(50) NOT NULL,
   `score` int(3) NOT NULL,
   `difficulty` varchar(10) NOT NULL,
-  `acceptance` decimal(10,0) NOT NULL DEFAULT 0,
+  `acceptance` decimal(2,2) NOT NULL DEFAULT 0,
   `attempts` mediumint(9) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
