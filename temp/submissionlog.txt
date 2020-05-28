@@ -1,3 +1,79 @@
 27 SUBMITTED PROBLEM:19 in C++ Result:ACC
 26 SUBMITTED PROBLEM:19 in C++ Result:ACC
 26 ALREADY SUBMITTED PROBLEM:19 IN C++
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'c62a0e98-bd87-424d-b48f-e804867fe91e', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'c62a0e98-bd87-424d-b48f-e804867fe91e', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '2146559c-d64b-4fba-95ea-9c34385305bc', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '2146559c-d64b-4fba-95ea-9c34385305bc', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.006', 'memory': 7128, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.006', 'memory': 7128, 'stderr': None, 'token': 'bdc951fe-f9b2-4acc-99f4-3a2e8c49a263', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+26 SUBMITTED PROBLEM:19 in C++ Result:ACC
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.006', 'memory': 1680, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.006', 'memory': 1680, 'stderr': None, 'token': '5ee7c923-3419-4276-a2a4-401a53a02821', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+27 SUBMITTED PROBLEM:19 in C++ Result:ACC
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.005', 'memory': 1544, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+{'stdout': 'YES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n', 'time': '0.005', 'memory': 1544, 'stderr': None, 'token': 'b3cee8c3-e98b-4557-bfce-8540902444d2', 'compile_output': None, 'message': None, 'status': {'id': 3, 'description': 'Accepted'}}
+26 SUBMITTED PROBLEM:19 in C++ Result:ACC
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+26 ALREADY SUBMITTED PROBLEM:19 IN C++
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '017bafa1-342b-4808-983a-f2a8d589c7f4', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '017bafa1-342b-4808-983a-f2a8d589c7f4', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '017bafa1-342b-4808-983a-f2a8d589c7f4', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '017bafa1-342b-4808-983a-f2a8d589c7f4', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '017bafa1-342b-4808-983a-f2a8d589c7f4', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': '27a9cd25-58aa-41ac-b118-7134756b1cce', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'fcc2937b-eb5e-42c5-91f8-a6f352f855b0', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 1, 'description': 'In Queue'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'stdout': None, 'time': None, 'memory': None, 'stderr': None, 'token': 'e7f16b3c-94ac-4ec9-a080-27bb7507a580', 'compile_output': None, 'message': None, 'status': {'id': 2, 'description': 'Processing'}}
+{'error': 'some attributes for this submission cannot be converted to UTF-8, use base64_encoded=true query parameter'}
+27 SUBMITTED PROBLEM:19 in C++ Result:CE
+26 SUBMITTED PROBLEM:19 in C++ Result:CE
+26 SUBMITTED PROBLEM:19 in C++ Result:ACC
